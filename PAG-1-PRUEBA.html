@@ -1,0 +1,318 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<!-- inicio12.php -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="-1" />
+<LINK rel=stylesheet type="text/css" href="https://titulosvalidez.educacion.gob.ar/validez/v_turnos/css/xmenu.css">
+<title>:: DEMO ::</title>
+<style>
+  *:focus{
+    border: 5px solid red; 
+  }
+  #Buscar:focus{
+    border: 5px solid red; 
+  }
+</style>
+<script src='https://www.google.com/recaptcha/api.js' async defer></script>
+ 
+</head>
+
+<body>
+<div id="top">
+ <div id="principal">
+     <div id="fecha" align="right">
+	  <SCRIPT language="JavaScript">
+        var today = new Date();
+		var year = today.getYear();
+        var dia = '';
+
+        document.write(' Buenos Aires, ');
+        if (today.getDay() == 0) {document.write('domingo ')};
+        if (today.getDay() == 1) {document.write('lunes ')};
+        if (today.getDay() == 2) {document.write('martes ')};
+        if (today.getDay() == 3) {document.write('mi�rcoles ')};
+        if (today.getDay() == 4) {document.write('jueves ')};
+        if (today.getDay() == 5) {document.write('viernes ')};
+        if (today.getDay() == 6) {document.write('S�bado ')};
+        document.write(today.getDate());
+        document.write(' de ');
+        if (today.getMonth() == 0) {document.write('enero ')};
+        if (today.getMonth() == 1) {document.write('febrero ')};
+        if (today.getMonth() == 2) {document.write('marzo ')};
+        if (today.getMonth() == 3) {document.write('abril ')};
+        if (today.getMonth() == 4) {document.write('mayo ')};
+        if (today.getMonth() == 5) {document.write('junio ')};
+        if (today.getMonth() == 6) {document.write('julio ')};
+        if (today.getMonth() == 7) {document.write('agosto ')};
+        if (today.getMonth() == 8) {document.write('septiembre ')};
+        if (today.getMonth() == 9) {document.write('octubre ')};
+        if (today.getMonth() == 10) {document.write('noviembre ')};
+        if (today.getMonth() == 11) {document.write('diciembre ')};
+ 		if (year < 1000) {year+=1900};
+        document.write('de ');
+		document.write(year);
+	   </SCRIPT>
+	</div>
+	<div id="cabecera">
+		<div id="logomin"><img src="http://placekitten.com/244/59" width="244" height="59" alt="demo" border="0" usemap="#Map">
+          <map name="Map">
+		   <area shape="rect" coords="6,4,240,57" href="#">
+          </map>
+	    </div>
+		<div id="logint">
+		  <div align="right"><a href="#"><img src="http://placekitten.com/190/52" width="190" height="52" alt="demo" border="0"></A></div>
+		</div>
+	</div>
+
+<div id="cabe_in">
+	<img src="https://titulosvalidez.educacion.gob.ar/validez/v_turnos/imagenes/cab_validez1.gif" width="759" height="58">
+</div>
+<div id="menu2">
+<div id="boton_on"><A HREF="index.php">Inicio</A></div>
+<div id="boton_on"><A HREF="inicio10.php">Tramites de Educaci&oacute;n Secundaria</A></div>
+<div id="boton_of"><A HREF="inicio20.php">Tramites de Educaci&oacute;n Superior</A></div>
+</div>
+<div id="menu3">
+<div id="boton_off"><A HREF="inicio10.php">Acerca del tr&aacute;mite</A></div>
+<div id="boton_onn"><A HREF="inicio12.php">Reserva de Turno</A></div>
+<div id="boton_off"><A HREF="inicio13.php">Cancelaci&oacute;n de turnos</A></div>
+<!--<div id="boton_off"><A HREF="inicio14.php">Seguimiento de tr&aacute;mites</A></div>-->
+<div id="boton_off"><A HREF="inicio15.php">Consultas</A></div>
+</div>
+
+<div id="conten">
+<br>
+<br>
+<div class=Alerta>ATENCI&Oacute;N:<BR>
+<BR> 
+A efectos de brindar una mejor atención a los solicitantes de turnos y debido a la situación actual de público conocimiento, la atención sera virtual. 
+<br>
+Al reservar un turno, recibirá un correo electrónico con toda la información necesaria para iniciar el trámite.
+<br><BR></div>
+
+<font class=Titulo>En caso de no haber recepcionado el mail correspondiente al finalizar su reserva, en el men&uacute; "CONSULTAS" ingrese los datos que se piden y siga las instrucciones que se muestran en pantalla para presentar el d&iacute;a de la cita.<BR>
+<BR></font>
+
+<div class="Nota"><font class=Titulo>Para completar el formulario que se presenta a continuaci&oacute;n debe cumplir las siguientes condiciones:<br>
+•	Debe completar el formulario con los datos de la persona titular de la documentaci&oacute;n escolar. <br>
+•	El documento de identidad con el que va a hacer la reserva del turno deberá ser el mismo que 
+presenta en el momento de iniciar el trámite. <br>
+•	Al completar los datos del documento de identidad deben hacerlo tal cual figura en el documento. 
+De esta forma es necesario incluir los puntos, guiones y letras que componen dicha identificaci&oacute;n &uacute;nica.<br>
+<!--(por ejemplo D.N.I. 00.000.000/ Pasaporte CC 000000000/ C.I. 0.000.000-0).
+<BR>-->
+<BR></font></div>
+
+ 
+  <br>
+
+<br>
+<!-- <form action="PAG-2.html" method="GET">
+    <div id="filatab">
+    <div id="etiqueta2"><span class="diffMark inserted diffMark inserted ">Para &ldquo;Reservar un turno&rdquo; complete los datos solicitados a continuaci&oacute;n.</span></div>
+    </div>
+    <br />
+    <div id="filatab4">
+    <div id="etiqueta5"><span class="diffMark inserted diffMark inserted ">Tipo de documento: </span></div>
+    <div id="datos4"><select class="textns" name="tipodni" size="1">
+    <option value="110">C. I. venezolana</option>
+    \n
+    <option value="2">C.I. argentina</option>
+    \n
+    <option value="51">C.I. boliviana</option>
+    \n
+    <option value="29">C.I. brasilera</option>
+    \n
+    <option value="100">C.I. brasilera para extranjeros</option>
+    \n
+    <option value="28">C.I. chilena</option>
+    \n
+    <option value="96">C.I. colombiana</option>
+    \n
+    <option value="83">C.I. ecuatoriana</option>
+    \n
+    <option value="23">C.I. paraguaya</option>
+    \n
+    <option value="74">C.I. peruana</option>
+    \n
+    <option value="137">C.I. salvadore&ntilde;a</option>
+    \n
+    <option value="31">C.I. uruguaya</option>
+    \n
+    <option value="91">D.N.I. espa&ntilde;ol</option>
+    \n
+    <option value="1">DNI</option>
+    \n
+    <option value="112">DNI argentino</option>
+    \n
+    <option value="52">DNI peruano</option>
+    \n
+    <option value="152">Otro</option>
+    \n
+    <option value="104">pasaporte alban&eacute;s</option>
+    \n
+    <option value="62">pasaporte alem&aacute;n</option>
+    \n
+    <option value="105">pasaporte angole&ntilde;o</option>
+    \n
+    <option value="54">pasaporte argentino</option>
+    \n
+    <option value="19">pasaporte australiano</option>
+    \n
+    <option value="75">pasaporte austr&iacute;aco</option>
+    \n
+    <option value="84">pasaporte belga</option>
+    \n
+    <option value="36">pasaporte boliviano</option>
+    \n
+    <option value="33">pasaporte brasilero</option>
+    \n
+    <option value="35">pasaporte camerun&eacute;s</option>
+    \n
+    <option value="66">pasaporte canadiense</option>
+    \n
+    <option value="34">pasaporte chileno</option>
+    \n
+    <option value="93">pasaporte chino</option>
+    \n
+    <option value="24">pasaporte colombiano</option>
+    \n
+    <option value="122">pasaporte congole&ntilde;o</option>
+    \n
+    <option value="80">pasaporte coreano</option>
+    \n
+    <option value="78">pasaporte costarricense</option>
+    \n
+    <option value="50">pasaporte cubano</option>
+    \n
+    <option value="101">pasaporte dan&eacute;s</option>
+    \n
+    <option value="132">pasaporte de Guinea-Bis&aacute;u</option>
+    \n
+    <option value="79">pasaporte dominicano</option>
+    \n
+    <option value="21">pasaporte ecuatoriano</option>
+    \n
+    <option value="37">pasaporte espa&ntilde;ol</option>
+    \n
+    <option value="63">pasaporte estadounidense</option>
+    \n
+    <option value="90">pasaporte finland&eacute;s</option>
+    \n
+    <option value="40">pasaporte franc&eacute;s</option>
+    \n
+    <option value="106">pasaporte griego</option>
+    \n
+    <option value="89">pasaporte guatemalteco</option>
+    \n
+    <option value="39">pasaporte haitiano</option>
+    \n
+    <option value="87">pasaporte holand&eacute;s</option>
+    \n
+    <option value="114">pasaporte hondure&ntilde;o</option>
+    \n
+    <option value="129">pasaporte h&uacute;ngaro</option>
+    \n
+    <option value="126">Pasaporte iran&iacute;</option>
+    \n
+    <option value="95">pasaporte irland&eacute;s</option>
+    \n
+    <option value="82">pasaporte israel&iacute;</option>
+    \n
+    <option value="43">pasaporte italiano</option>
+    \n
+    <option value="81">pasaporte japon&eacute;s</option>
+    \n
+    <option value="88">pasaporte liban&eacute;s</option>
+    \n
+    <option value="108">pasaporte lituano</option>
+    \n
+    <option value="127">pasaporte maliense</option>
+    \n
+    <option value="116">Pasaporte marroqu&iacute;</option>
+    \n
+    <option value="3">pasaporte mercosur</option>
+    \n
+    <option value="38">pasaporte mexicano</option>
+    \n
+    <option value="107">pasaporte mozambique&ntilde;o</option>
+    \n
+    <option value="45">pasaporte nicarag&uuml;ense</option>
+    \n
+    <option value="92">pasaporte noruego</option>
+    \n
+    <option value="42">pasaporte paname&ntilde;o</option>
+    \n
+    <option value="41">pasaporte paraguayo</option>
+    \n
+    <option value="20">pasaporte peruano</option>
+    \n
+    <option value="119">Pasaporte polaco</option>
+    \n
+    <option value="86">pasaporte portugues</option>
+    \n
+    <option value="70">pasaporte ruso</option>
+    \n
+    <option value="77">pasaporte salvadore&ntilde;o</option>
+    \n
+    <option value="124">pasaporte senegales</option>
+    \n
+    <option value="118">Pasaporte sirio</option>
+    \n
+    <option value="113">Pasaporte sudafricano</option>
+    \n
+    <option value="109">Pasaporte sueco</option>
+    \n
+    <option value="59">pasaporte suizo</option>
+    \n
+    <option value="123">pasaporte trinitense</option>
+    \n
+    <option value="128">pasaporte ucraniano</option>
+    \n
+    <option value="49">pasaporte uruguayo</option>
+    \n
+    <option value="22">pasaporte venezolano</option>
+    \n</select></div>
+    </div>
+    <div id="filatab4">
+    <div id="etiqueta5"><span class="diffMark inserted diffMark inserted ">Nro. de documento: </span></div>
+    <div id="datos4" class="nonDiffHide "><input class="textns" maxlength="20" name="nrodni" size="20" type="text" value="" /></div>
+    </div>
+    <br /><br />
+    <div id="filatab">
+    <div id="etiqueta2"><span class="diffMark inserted diffMark inserted ">Seleccione el tr&aacute;mite que necesita realizar: </span></div>
+    <div id="datos3"><select class="textns" name="tramite" size="1">
+    <option value="1">Convalidaci&oacute;n de estudios realizados en el extranjero</option>
+    <option value="3">Reconocimiento de estudios realizados en el extranjero</option>
+    </select></div>
+    </div>
+    <br /><br />
+    <div id="filatab">
+    <div id="etiqueta2"><span class="diffMark inserted diffMark inserted ">Tilde en el recuadro donde dice "No soy un robot" y seleccione lo que se pide a continuaci&oacute;n antes de CONSULTAR: </span></div>
+    <div id="etiqueta1" class="nonDiffHide ">
+    <div class="g-recaptcha" data-sitekey="6LehaKwaAAAAAOWhJquTDJabF9NHUfZxnIB_z1Gq">
+    </div>
+    </div>
+    </div>
+    <div id="filatab" class="nonDiffHide ">
+    <div id="etiqueta4"><input id="Buscar" name="submit" type="submit" value="CONSULTAR" /></div>
+    </div>
+    <br /><br /></form> -->
+<br>
+</div>
+
+
+  <div id="pie"><table id="tablapie">
+          <tr>
+			<td><strong>Montevideo 950 C1020ACA - Tel&eacute;fono: (011) 4129-1317/1318/1431 
+			- Copyright &copy; 2010. Todos los derechos reservados.</strong><br>
+			Sitio web desarrollado por la Direcci&oacute;n de Gesti&oacute;n Inform&aacute;tica
+			</td>
+		  </tr></table>
+  </div>
+ </div>
+</div>
+</body>
+</html>
