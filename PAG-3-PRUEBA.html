@@ -1,0 +1,107 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<!-- inicio12_rec.php -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="-1" />
+<LINK rel=stylesheet type="text/css" href="https://titulosvalidez.educacion.gob.ar/validez/v_turnos/css/xmenu.css">
+<title>:: DEMO ::</title>
+<style>
+  *:focus{
+    border: 5px solid red; 
+  }
+  #Buscar:focus{
+    border: 5px solid red; 
+  }
+</style>
+<script src='https://www.google.com/recaptcha/api.js' async defer></script>
+ 
+</head>
+
+<body>
+<div id="top">
+ <div id="principal">
+     <div id="fecha" align="right">
+	  <SCRIPT language="JavaScript">
+        var today = new Date();
+		var year = today.getYear();
+        var dia = '';
+
+        document.write(' Buenos Aires, ');
+        if (today.getDay() == 0) {document.write('domingo ')};
+        if (today.getDay() == 1) {document.write('lunes ')};
+        if (today.getDay() == 2) {document.write('martes ')};
+        if (today.getDay() == 3) {document.write('mi�rcoles ')};
+        if (today.getDay() == 4) {document.write('jueves ')};
+        if (today.getDay() == 5) {document.write('viernes ')};
+        if (today.getDay() == 6) {document.write('S�bado ')};
+        document.write(today.getDate());
+        document.write(' de ');
+        if (today.getMonth() == 0) {document.write('enero ')};
+        if (today.getMonth() == 1) {document.write('febrero ')};
+        if (today.getMonth() == 2) {document.write('marzo ')};
+        if (today.getMonth() == 3) {document.write('abril ')};
+        if (today.getMonth() == 4) {document.write('mayo ')};
+        if (today.getMonth() == 5) {document.write('junio ')};
+        if (today.getMonth() == 6) {document.write('julio ')};
+        if (today.getMonth() == 7) {document.write('agosto ')};
+        if (today.getMonth() == 8) {document.write('septiembre ')};
+        if (today.getMonth() == 9) {document.write('octubre ')};
+        if (today.getMonth() == 10) {document.write('noviembre ')};
+        if (today.getMonth() == 11) {document.write('diciembre ')};
+ 		if (year < 1000) {year+=1900};
+        document.write('de ');
+		document.write(year);
+	   </SCRIPT>
+	</div>
+	<div id="cabecera">
+		<div id="logomin"><img src="http://placekitten.com/244/59" width="244" height="59" alt="demo" border="0" usemap="#Map">
+          <map name="Map">
+		   <area shape="rect" coords="6,4,240,57" href="#">
+          </map>
+	    </div>
+		<div id="logint">
+		  <div align="right"><a href="#"><img src="http://placekitten.com/190/52" width="190" height="52" alt="demo" border="0"></A></div>
+		</div>
+	</div>
+
+<div id="cabe_in">
+	<img src="https://titulosvalidez.educacion.gob.ar/validez/v_turnos/imagenes/cab_validez1.gif" width="759" height="58">
+</div>
+<div id="menu2">
+<div id="boton_on"><A HREF="index.php">Inicio</A></div>
+<div id="boton_on"><A HREF="inicio10.php">Tramites de Educaci&oacute;n Secundaria</A></div>
+<div id="boton_of"><A HREF="inicio20.php">Tramites de Educaci&oacute;n Superior</A></div>
+</div>
+<div id="menu3">
+<div id="boton_off"><A HREF="inicio10.php">Acerca del tr&aacute;mite</A></div>
+<div id="boton_onn"><A HREF="inicio12.php">Reserva de Turno</A></div>
+<div id="boton_off"><A HREF="inicio13.php">Cancelaci&oacute;n de turnos</A></div>
+<!--<div id="boton_off"><A HREF="inicio14.php">Seguimiento de tr&aacute;mites</A></div>-->
+<div id="boton_off"><A HREF="inicio15.php">Consultas</A></div>
+</div>
+
+<div id="conten">
+
+    <br>
+	<form action="inicio12.php" method="POST"><br><center><font class=Subtitulo1><br><br>Lo sentimos, el turno ya fue reservado.<br>Por favor, intente efectuar una reserva nuevamente.<br></font></center><br><br><input type="submit" value="Continuar" name="submit2" id="Buscar">	<br>
+	<br>
+	<br>&nbsp;&nbsp;
+    
+  </form>
+</div>
+
+
+  <div id="pie"><table id="tablapie">
+          <tr>
+			<td><strong>Montevideo 950 C1020ACA - Tel&eacute;fono: (011) 4129-1317/1318/1431 
+			- Copyright &copy; 2010. Todos los derechos reservados.</strong><br>
+			Sitio web desarrollado por la Direcci&oacute;n de Gesti&oacute;n Inform&aacute;tica
+			</td>
+		  </tr></table>
+  </div>
+ </div>
+</div>
+</body>
+</html>
